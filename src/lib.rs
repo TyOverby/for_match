@@ -1,5 +1,6 @@
 #![feature(macro_rules)]
 
+#[macro_export]
 macro_rules! for_match (
     ($e: expr $($($b: pat)|+ $(if $cond: expr)* => $a: expr),+) => {
         {
